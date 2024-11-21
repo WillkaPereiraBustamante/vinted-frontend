@@ -53,7 +53,7 @@ const Home = () => {
                   <div>
                     <img
                       className="card-img"
-                      src={offer.product_pictures[0].url}
+                      src={offer.product_image.secure_url}
                       alt=""
                     />
                     <div className="card-price-size-brand">

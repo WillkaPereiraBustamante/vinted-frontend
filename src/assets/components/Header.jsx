@@ -7,9 +7,7 @@ const Header = () => {
   //   const location = useLocation();
   return (
     <header className="container">
-      <Link to="/offer/:id">
-        <img className="logo" src="src/assets/imgs/vinted-logo.png" alt="" />
-      </Link>
+      <img className="logo" src="src/assets/imgs/vinted-logo.png" alt="" />
 
       <div className="search">
         <input type="text" placeholder=" 🔍  Recherche des articles" />
