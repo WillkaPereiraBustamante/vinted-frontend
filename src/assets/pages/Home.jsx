@@ -28,7 +28,10 @@ const Home = () => {
     <>
       {/* {console.log(data)} */}
       <div className="home">
-        <img src="src/assets/imgs/hero-24963eb2.jpg" alt="" />
+        <img
+          src="https://static.vinted.com/assets/seller-promotion/other/banner-wide-9b45d0aa9a311c4ff6013e9cf3bc2b6646468be3d2f553192c63598685fcc177.jpg"
+          alt=""
+        />
         <div className="home-hero-ready">
           Prêts à faire du tri dans vos placards ?
           <button>Commencez à vendre</button>
