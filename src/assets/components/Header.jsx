@@ -3,11 +3,13 @@ import {
   //  useLocation
 } from "react-router-dom";
 
+import logo from "../imgs/vinted-logo.png";
+
 const Header = () => {
   //   const location = useLocation();
   return (
     <header className="container">
-      <img className="logo" src="src/assets/imgs/vinted-logo.png" alt="" />
+      <img className="logo" src={logo} alt="" />
 
       <div className="search">
         <input type="text" placeholder=" 🔍  Recherche des articles" />
