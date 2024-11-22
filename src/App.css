@@ -77,7 +77,8 @@ header button {
 nav {
   width: 250px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 20px;
 }
 
 .button-login-signup {
@@ -90,7 +91,14 @@ nav {
 .button-sold {
   background-color: #3bb1ba;
   color: #fff;
-  border: 1px solid #3bb1ba;
+  border: none;
+  border-radius: 5px;
+}
+
+.button-logout {
+  background-color: #c2175b;
+  color: #fff;
+  border: none;
   border-radius: 5px;
 }
 
@@ -289,4 +297,75 @@ nav {
   height: 1px;
   width: 100%;
   background-color: rgb(177, 177, 177);
+}
+
+/* SIGNIN */
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.signup-container h2 {
+  font-size: 24px;
+  margin: 20px 0;
+  color: #a7a7a7;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 275px;
+  margin: 0 auto;
+  justify-content: center;
+}
+.signup-form input {
+  height: 38px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #dc8989;
+}
+.checkbox-container {
+  color: #a7a7a7;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.checkbox-container > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #a7a7a7;
+  height: 20px;
+}
+
+.checkbox-container input {
+  width: 26px;
+  margin: 0;
+}
+.checkbox-container p {
+  font-size: 14px;
+  text-align: justify;
+  margin: 12px 0;
+}
+
+.signup-container button {
+  box-sizing: border-box;
+  background-color: #3bb1ba;
+  color: #fff;
+  border: 1px solid #3bb1ba;
+  border-radius: 5px;
+  height: 45px;
+  margin-top: 32px;
+  font-size: 16px;
+}
+
+.signup-container a {
+  color: #3bb1ba;
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 12px;
 }

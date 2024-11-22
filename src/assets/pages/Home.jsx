@@ -41,12 +41,7 @@ const Home = () => {
         <div className="home-card-wrapper container">
           {data.offers.map((offer) => {
             return (
-              <Link
-                className="link"
-                to={`/offer/${offer._id}`}
-                offer={offer}
-                key={offer.id}
-              >
+              <Link className="link" to={`/offer/${offer._id}`} key={offer._id}>
                 <div className="card">
                   <div className="card-avatar-username">
                     <img src={offer.owner.account?.avatar?.url} alt="" />
