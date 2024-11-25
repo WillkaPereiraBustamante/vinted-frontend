@@ -19,7 +19,7 @@ const Login = ({ handleConnexionStatus }) => {
         }
       );
       handleConnexionStatus(response.data.token);
-      navigate("/");
+      navigate("/Publish");
       console.log(response.data);
     } catch (error) {
       console.log(error);

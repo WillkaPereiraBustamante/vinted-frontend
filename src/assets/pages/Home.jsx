@@ -2,15 +2,19 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const Home = () => {
+const Home = ({ title }) => {
   const [data, setData] = useState({});
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
+        let filters = "";
+        if (title) {
+          filters += "?title=" + title;
+        }
         const response = await axios.get(
-          "https://lereacteur-vinted-api.herokuapp.com/v2/offers"
+          "https://lereacteur-vinted-api.herokuapp.com/v2/offers" + filters
         );
         // console.log(response.data);
         setData(response.data);
@@ -20,13 +24,13 @@ const Home = () => {
       }
     };
     fetchData();
-  }, []);
+  }, [title]);
 
   return isLoading ? (
     <p>Loading ...</p>
   ) : (
     <>
-      {/* {console.log(data)} */}
+      {console.log(data)}
       <div className="home">
         <img
           src="https://static.vinted.com/assets/seller-promotion/other/banner-wide-9b45d0aa9a311c4ff6013e9cf3bc2b6646468be3d2f553192c63598685fcc177.jpg"

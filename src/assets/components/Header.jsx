@@ -1,8 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
-
 import logo from "../imgs/vinted-logo.png";
 
-const Header = ({ token, handleConnexionStatus }) => {
+const Header = ({ token, handleConnexionStatus, title, setTitle }) => {
   //   const location = useLocation();
 
   const navigate = useNavigate();
@@ -14,7 +13,14 @@ const Header = ({ token, handleConnexionStatus }) => {
       </a>
 
       <div className="search">
-        <input type="text" placeholder=" 🔍  Recherche des articles" />
+        <input
+          type="text"
+          placeholder="  🔍  Recherche des articles"
+          value={title}
+          onChange={(event) => {
+            setTitle(event.target.value);
+          }}
+        />
         {/* <div>
           <span>Trier par prix : </span>
           <span></span>
@@ -46,7 +52,7 @@ const Header = ({ token, handleConnexionStatus }) => {
           </>
         )}
       </nav>
-      <Link to="/">
+      <Link to="/publish">
         <button className="button-sold">Vends tes articles</button>
       </Link>
     </header>
