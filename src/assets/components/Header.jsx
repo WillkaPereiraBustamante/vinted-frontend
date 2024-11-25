@@ -52,7 +52,7 @@ const Header = ({ token, handleConnexionStatus, title, setTitle }) => {
           </>
         )}
       </nav>
-      <Link to="/publish">
+      <Link to={token ? "/publish" : "/login"}>
         <button className="button-sold">Vends tes articles</button>
       </Link>
     </header>
