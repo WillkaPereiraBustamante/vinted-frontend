@@ -35,7 +35,7 @@ function App() {
         setTitle={setTitle}
       />
       <Routes>
-        <Route path="/" element={<Home title={title} />} />
+        <Route path="/" element={<Home title={title} token={token} />} />
         <Route path="/offer/:id" element={<Offer />} />
         <Route
           path="/signup"

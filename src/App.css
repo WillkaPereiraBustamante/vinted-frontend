@@ -128,6 +128,12 @@ nav {
   border: none;
   border-radius: 5px;
 }
+.button-logout:hover {
+  color: #c2175b;
+  background-color: #fff;
+  border: 1px solid #c2175b;
+  border-radius: 5px;
+}
 
 /* HOME */
 
@@ -165,6 +171,11 @@ nav {
   height: 45px;
   margin-top: 32px;
   font-size: 16px;
+}
+
+.home-hero-ready button:hover {
+  color: #3bb1ba;
+  background-color: #fff;
 }
 
 /* Cards */
@@ -442,6 +453,11 @@ nav {
   cursor: pointer;
 }
 
+.label-file:hover {
+  background-color: #3bb1ba;
+  color: #fff;
+}
+
 .label-file span:first-child {
   font-size: 40px;
 }
@@ -528,4 +544,9 @@ nav {
   margin: 32px 0;
   font-size: 16px;
   cursor: pointer;
+}
+
+.form-button-section button:hover {
+  color: #3bb1ba;
+  background-color: #fff;
 }

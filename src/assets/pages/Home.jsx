@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const Home = ({ title }) => {
+const Home = ({ title, token }) => {
   const [data, setData] = useState({});
   const [isLoading, setIsLoading] = useState(true);
 
@@ -38,7 +38,9 @@ const Home = ({ title }) => {
         />
         <div className="home-hero-ready">
           Prêts à faire du tri dans vos placards ?
-          <button>Commencez à vendre</button>
+          <Link to={token ? "/publish" : "/login"}>
+            <button>Commencez à vendre</button>
+          </Link>
         </div>
       </div>
       <div className="container">
