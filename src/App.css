@@ -334,7 +334,7 @@ nav {
   background-color: rgb(177, 177, 177);
 }
 
-/* SIGNIN */
+/* SIGNUP */
 
 .signup-container {
   display: flex;
@@ -363,6 +363,13 @@ nav {
   border: none;
   border-bottom: 1px solid #dc8989;
 }
+.signup-form input:focus {
+  outline: none;
+}
+.signup-form input::-webkit-input-placeholder {
+  color: rgb(206, 206, 206);
+}
+
 .checkbox-container {
   color: #a7a7a7;
   padding: 10px;
@@ -396,6 +403,11 @@ nav {
   height: 45px;
   margin-top: 32px;
   font-size: 16px;
+}
+
+.signup-container button:hover {
+  color: #3bb1ba;
+  background-color: #fff;
 }
 
 .signup-container a {
