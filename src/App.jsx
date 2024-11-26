@@ -9,6 +9,7 @@ import Offer from "./assets/pages/Offer";
 import Login from "./assets/pages/Login";
 import Signup from "./assets/pages/SignUp";
 import Publish from "./assets/pages/Publish";
+import Payment from "./assets/pages/Payment";
 
 // Components
 import Header from "./assets/components/Header";
@@ -36,7 +37,7 @@ function App() {
       />
       <Routes>
         <Route path="/" element={<Home title={title} token={token} />} />
-        <Route path="/offer/:id" element={<Offer />} />
+        <Route path="/offer/:id" element={<Offer token={token} />} />
         <Route
           path="/signup"
           element={<Signup handleConnexionStatus={handleConnexionStatus} />}
@@ -46,6 +47,7 @@ function App() {
           element={<Login handleConnexionStatus={handleConnexionStatus} />}
         />
         <Route path="/publish" element={<Publish token={token} />} />
+        <Route path="/payment" element={<Payment />} />
       </Routes>
     </Router>
   );

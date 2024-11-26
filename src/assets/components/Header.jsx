@@ -2,8 +2,6 @@ import { Link, useNavigate } from "react-router-dom";
 import logo from "../imgs/vinted-logo.png";
 
 const Header = ({ token, handleConnexionStatus, title, setTitle }) => {
-  //   const location = useLocation();
-
   const navigate = useNavigate();
 
   return (
@@ -21,12 +19,6 @@ const Header = ({ token, handleConnexionStatus, title, setTitle }) => {
             setTitle(event.target.value);
           }}
         />
-        {/* <div>
-          <span>Trier par prix : </span>
-          <span></span>
-          <span>Prix entre : </span>
-          <div>⭕️-----⭕️---------------------------------------</div>
-        </div> */}
       </div>
       <nav>
         {token ? (
@@ -34,8 +26,6 @@ const Header = ({ token, handleConnexionStatus, title, setTitle }) => {
             className="button-logout"
             onClick={() => {
               handleConnexionStatus(null);
-              // Cookies.remove("vinted-token");
-              // setToken(null);
               navigate("/");
             }}
           >

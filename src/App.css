@@ -1,6 +1,5 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -214,6 +213,10 @@ nav {
   height: 360px;
   width: 100%;
   object-fit: cover;
+}
+
+.card-img:hover {
+  opacity: 0.8;
 }
 
 .card-price-size-brand {
